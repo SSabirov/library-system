@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Author.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="library-system.cpp" />
     <ClCompile Include="Person.cpp" />

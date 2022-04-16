@@ -4,10 +4,17 @@
 #include <iostream>
 #include "Date.h"
 #include"Person.h"
+#include "Author.h"
+#include"Student.h"
+
 
 int main()
 {
-	Person a("said", 17, 5, 1994);
+	Author a("Alex Welling", "CodesW Ltd", 12, 11, 1994);
 	a.print();
+	Student b("Tom Petley", "Computer Science", 20, 12, 2000);
+	b.print();
+	
+
 }
 

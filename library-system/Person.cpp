@@ -2,7 +2,7 @@
 #include<iostream>
 
 
-Person::Person(string passName, int dd, int mm, int yy) : Date(dd, mm, yy)
+Person::Person(string passName="", int dd = 0, int mm = 0, int yy = 0) : Date(dd, mm, yy)
 {
 	setName(passName);
 }
@@ -20,7 +20,7 @@ string Person::getName()
 
 void Person::print()
 {
-	cout << "Name: " << getName() << endl;
+	cout << "Name: " << getName() << "\t";
 	Date::print();
 }
 Person::~Person()
