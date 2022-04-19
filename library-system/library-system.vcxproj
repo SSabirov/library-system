@@ -140,6 +140,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Author.cpp" />
+    <ClCompile Include="Book.cpp" />
+    <ClCompile Include="Borrow.cpp" />
     <ClCompile Include="Date.cpp" />
     <ClCompile Include="library-system.cpp" />
     <ClCompile Include="Person.cpp" />
@@ -149,11 +151,17 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Author.h" />
+    <ClInclude Include="Book.h" />
+    <ClInclude Include="Borrow.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="Publisher.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="Time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="library-system.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -4,7 +4,7 @@
 #include"Date.h"
 using namespace std;
 
-class Person:Date
+class Person
 {
 public:
 	Person(string,int, int, int);
@@ -15,5 +15,6 @@ public:
 
 private:
 	string name;
+	Date dob;
 };
 

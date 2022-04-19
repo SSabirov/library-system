@@ -2,18 +2,22 @@
 //
 
 #include <iostream>
+
 #include "Date.h"
 #include"Person.h"
 #include "Author.h"
 #include"Student.h"
-
+#include"Book.h"
+using namespace std;
 
 int main()
 {
-	Author a("Alex Welling", "CodesW Ltd", 12, 11, 1994);
-	a.print();
-	Student b("Tom Petley", "Computer Science", 20, 12, 2000);
-	b.print();
+	
+	Book bok("Clean Code", "RObinson", "Google", 11, 12, 2000, "Pearson", 1);
+	bok.print();
+
+	
+	
 	
 
 }
