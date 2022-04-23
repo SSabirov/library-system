@@ -1,17 +1,12 @@
-#include<iostream>
+
 #include"Date.h"
 
-Date::Date() {
+Date::Date()
+{
 	setDate(0, 0, 0);
 }
 
-Date::Date(int dd) {
-	setDate(dd, 0, 0);
-}
 
-Date::Date(int dd, int mm) {
-	setDate(dd, mm, 0);
-}
 
 Date::Date(int dd, int mm, int yy)
 {
@@ -21,9 +16,7 @@ Date::Date(int dd, int mm, int yy)
 	}
 	else
 	{
-		day = 0;
-		month = 0;
-		year = 0;
+		
 		std::cout << "Invalid value entered \n";
 	}
 
@@ -41,6 +34,3 @@ void Date::print() {
 	std::cout << day << "/" << month << "/" << year << "\t";
 }
 
-Date::~Date()
-{
-}

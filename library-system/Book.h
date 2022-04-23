@@ -8,11 +8,10 @@
 class Book
 {
 public:
-	Book(string, string, string, int, int, int, string, int);// title,Author constructor, Publisher constructor, numberOfbooks
+	Book(string=NULL, string=NULL, string=NULL, int=0, int=0, int=0, string=NULL, int=0);// title,Author constructor, Publisher constructor, numberOfbooks
 	void print();
 	void setTitle(string);
-	Book getBook();
-	
+
 
 private:
 	string title;

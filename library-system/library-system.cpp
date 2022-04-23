@@ -1,7 +1,6 @@
 // library-system.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
 
 #include "Date.h"
 #include"Person.h"
@@ -13,7 +12,27 @@ using namespace std;
 int main()
 {
 	
-	Book bok("Clean Code", "RObinson", "Google", 11, 12, 2000, "Pearson", 1);
+	string passTitle, passAuthor, passEmployer, passPublisher;
+	int dd, mm, yy, numberOfBooks;
+	cout << "Insert Title: ";
+	cin >> passTitle;
+	cout << "Insert Authors name : ";
+	cin >> passAuthor;
+	cout << "Insert Authors employer : ";
+	cin >> passEmployer;
+	cout << " Insert date of birth : ";
+	cout << " Day:";
+	cin >> dd;
+	cout << " Month";
+	cin >> mm; 
+	cout << " Year: ";
+	cin >> yy;
+	cout << "insert number of books |:";
+	cin >> numberOfBooks;
+	cout << "insert publisher: ";
+	cin >> passPublisher;
+	Book bok(passTitle, passAuthor, passEmployer, dd, mm, yy,passPublisher, numberOfBooks);
+	
 	bok.print();
 
 	

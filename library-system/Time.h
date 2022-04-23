@@ -4,7 +4,7 @@ using namespace std;
 
 class Time{
 public:
-	Time(int, int, int );
+	Time(int=0, int=0, int=0);
 	void print();
 	void setTime(int, int , int);
 	~Time();
