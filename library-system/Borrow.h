@@ -2,28 +2,23 @@
 #include"Book.h"
 #include"Time.h"
 #include "Date.h";
+#include "Student.h"
 
-class Borrow
+class Borrow:Book,Student,Time,Date
 {
 public:
 	Borrow();
+	Borrow(int, int, int,int,int,int,Student& borrower,Book& borrowingBook);
 	void print();
 	
-	~Borrow();
+
 
 private:
-	Time borrowingTime,expiryTime;
-	Date borrowingDate, ExpiryDate;
-
+	Time borrowingTime;
+	Date borrowingDate;
+	Book borrowedBook;
+	Student borrowedStudent;
 };
 
-Borrow::Borrow()
-{
 
-}
-
-Borrow::~Borrow()
-{
-	
-}
 
